@@ -9,19 +9,19 @@
     transform: none;
   }
   25% {
-    transform: scale(1.2) translate(-200px, -250px);
+    transform: scale(1.1) translate(-200px, -150px);
   }
   50% {
-    transform: scale(1.35) translate(-250px, -200px);
+    transform: scale(1.2) translate(-275px, -125px);
   }
   75% {
-    transform: scale(1.2) translate(-175px, -100px);
+    transform: scale(1.1) translate(-275px, 100px);
   }
 }
 
 /*Second Block - Orange*/
 .animateBlob2 {
-  animation: blob2 12s infinite;
+  animation: blob2 20s infinite;
 }
 
 @keyframes blob2 {
@@ -45,17 +45,17 @@
     transform: none;
   }
   35% {
-    transform: translate(150px, 100px);
+    transform: scale(0.7) translate(-10px, 0px);
   }
 
   65% {
-    transform: translate(-300px, 150px);
+    transform: scale(0.7) translate(-100px, 0px);
   }
 }
 
 /*Bottom Block - Blue*/
 .animateBlob4 {
-  animation: blob4 13s infinite;
+  animation: blob4 30s infinite;
 }
 
 @keyframes blob4 {
@@ -63,14 +63,44 @@
   100% {
     transform: none;
   }
-  25% {
+  35% {
     transform: scale(1) translate(-50px, 0px);
   }
 
-  50% {
-    transform: scale(1.05) translate(-75px, 50px);
+  65% {
+    transform: scale(1.05) translate(-75px, 30px);
   }
-  75% {
-    transform: scale(1) translate(150px, 50px);
+}
+
+.animateIn {
+  opacity: 0;
+  animation: animateIn 600ms ease-in-out forwards 0.4s;
+}
+
+.animateIn:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.animateIn:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.animateIn:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+@keyframes animateIn {
+  0% {
+    /* visibility: hidden; */
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(10px);
+  }
+
+  100% {
+    /* visibility: visible; */
+    opacity: 1;
+    transform: none;
+    filter: none;
   }
 }
