@@ -1,33 +1,28 @@
 import styles from "@/app/index.module.css";
 
-import Navbar from "./components/Navbar";
 import BackgroundBlobs from "./components/BackgroundBlobs";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <section className="relative h-screen overflow-hidden">
         <div className="relative z-1 m-auto flex h-full max-w-4xl flex-col items-center justify-center text-center font-medium">
           <div
-            className={`${styles.animateIn} mb-14 flex h-8 items-center gap-2 rounded-full border border-white/20 bg-white/15 px-6 shadow-md`}
+            className={`${styles.animateIn} mb-6 flex h-8 items-center gap-2 rounded-full border border-white/20 bg-white/15 px-6 shadow-sm`}
           >
             <div className="size-2 rounded-full bg-[#49E83E]"></div>
             <span className="text-sm leading-none font-normal">
-              Version 2.3 now in beta!
+              Version 2.3 now in beta
             </span>
           </div>
 
-          <h1
-            className={`${styles.animateIn} mb-9 text-7xl leading-[110%] text-shadow-[0_0px_10px_rgb(0_0_0/0.15)]`}
-          >
+          <h1 className={`${styles.animateIn} mb-8 text-7xl leading-[105%]`}>
             The last payment gateway you’ll ever need.
           </h1>
           <p
-            className={`${styles.animateIn} text-shadow-[0_0px_10px_rgb(0_0_0/0.15) text-lg] mb-15.5 font-normal`}
+            className={`${styles.animateIn} text-lg] mb-12 max-w-120 font-normal`}
           >
-            Cut through the noise. Give your business fiscal clarity to focus on
-            growth.
+            Secure checkouts, instant authorizations, and clarity to scale.
           </p>
 
           <div
@@ -43,7 +38,7 @@ export default function Home() {
               className="flex h-11 w-40.75 items-center justify-center"
               href=""
             >
-              Contact our Team
+              Contact Our Team
             </a>
           </div>
         </div>
