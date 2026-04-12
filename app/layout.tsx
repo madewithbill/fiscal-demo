@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Fiscal",
+  title: "Fiscal - Seamless payments at scale",
   description: "A financial solution for innovation businesses.",
 };
 
